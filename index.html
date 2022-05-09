@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,shrink-to-fit=no">
+    <!-- ========Bootstrap========= -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <!-- ================FontAwsome============== -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>My Portfolio</title>
+    <!-- ==========Favicon============ -->
+    <link rel="shortcut icon" type="image/png" href="img/portfolio_icon.png">
+
+    <!-- ===============google fonts========= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+    <!-- ================Main Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <!-- ========================preloader================================ -->
+    <div class="loading-area position fixed left-0 top-0 bg-secondary ">
+        <span class="load_anim1"></span>
+        <span class="load_anim2"></span>
+    </div>
+    <!-- ================Start Header (fixed in large screen)============= -->
+    <div class="d-none d-lg-block position-fixed top-0 start-0" id="home">
+        <header id="header">
+            <div class="d-flex flex-column ">
+                <div class="profile d-block mt-2 text-center mb-3">
+                    <img src="img/me.jpg" class="rounded-circle" alt="Hanaa Mohammed">
+                    <h1 class="h4 my-3">Hanaa Mohammed</h1>
+                    <div class="social-links mt-3 text-center">
+                        <a href="#" class=" rounded-circle d-inline-block text-center p-2 social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class=" rounded-circle d-inline-block text-center p-2 social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class=" rounded-circle d-inline-block text-center p-2 social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class=" rounded-circle d-inline-block text-center p-2 social-icon">
+                            <i class="fab fa-skype"></i>
+                        </a>
+                        <a href="#" class=" rounded-circle d-inline-block text-center p-2 social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- ==================Start fixed nav in large screen================== -->
+                <nav class="nav nav-dark mx-3" id="navBar">
+                    <div class="container-fluid">
+                        <ul class="nav me-auto mb-2 mb-lg-0 d-flex flex-column">
+                            <li class="nav-item mb-3">
+                                <a class="nav-link" aria-current="page" href="#home">
+                                    <i class="fas fa-home"></i>
+                                    <span class="ms-3">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link" aria-current="page" href="#about">
+                                    <i class="fas fa-user"></i>
+                                    <span class="ms-3">About</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link" aria-current="page" href="#skills">
+                                    <i class="fas fa-server"></i>
+                                    <span class="ms-3">Skills</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link" aria-current="page" href="#resume">
+                                    <i class="fas fa-file"></i>
+                                    <span class="ms-3">Resume</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link" aria-current="page" href="#portfolio">
+                                    <i class="fas fa-id-card-alt"></i>
+                                    <span class="ms-3">Portfolio</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link" aria-current="page" href="#contact">
+                                    <i class="fas fa-envelope"></i>
+                                    <span class="ms-3">Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- ==================End nav================== -->
+            </div>
+        </header>
+        <!-- =================ٍStart Footer===================== -->
+        <footer class="footer position-fixed p-3  left-0 bottom-0 d-md-block">
+            <div class="container">
+                <div class="copyright">
+                    © Copyright <strong><span>Portfolio</span></strong>
+                </div>
+                <div class="credits">
+                    Designed by <a href="#">Hanaa Mohammed</a>
+                </div>
+            </div>
+        </footer>
+        <div id="finish"></div>
+        <!-- =================End Footer===================== -->
+    </div>
+    <!-- ================End Header (fixed in large screen)============= -->
+
+    <!-- ================Start Header for small screen================== -->
+    <!-- ================icon in small screen============ -->
+    <div class="navbar navbar-light fixed-top d-lg-none ">
+        <div class="container-fluid">
+            <div class="me-auto"></div>
+            <button class="navbar-toggler icon shadow" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+        </div>
+    </div>
+    <!-- ================icon in small screen============ -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <header id="header">
+            <div class="d-flex flex-column">
+                <div class="profile d-block mt-4 text-center mb-3">
+                    <img src="img/me.jpg" class="rounded-circle" alt="">
+                    <h1 class="h4 my-3">Hanaa Mohammed</h1>
+                    <div class="social-links mt-3 text-center">
+                        <a href="#" class=" rounded-circle d-inline-block text-center p-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class=" rounded-circle d-inline-block text-center p-2">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class=" rounded-circle d-inline-block text-center p-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class=" rounded-circle d-inline-block text-center p-2">
+                            <i class="fab fa-skype"></i>
+                        </a>
+                        <a href="#" class=" rounded-circle d-inline-block text-center p-2">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- ==================Start nav================== -->
+                <nav class="nav nav-dark mx-3" id="navBar">
+                    <div class="container-fluid">
+                        <ul class="nav me-auto mb-2 mb-lg-0 d-flex flex-column">
+                            <li class="nav-item mb-3">
+                                <a class="nav-link active" aria-current="page" href="#home">
+                                    <i class="fas fa-home"></i>
+                                    <span class="ms-3">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link" aria-current="page" href="#about">
+                                    <i class="fas fa-user"></i>
+                                    <span class="ms-3">About</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link" aria-current="page" href="#skills">
+                                    <i class="fas fa-server"></i>
+                                    <span class="ms-3">Skills</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link" aria-current="page" href="#resume">
+                                    <i class="fas fa-file"></i>
+                                    <span class="ms-3">Resume</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link" aria-current="page" href="#portfolio">
+                                    <i class="fas fa-id-card-alt"></i>
+                                    <span class="ms-3">Portfolio</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link" aria-current="page" href="#contact">
+                                    <i class="fas fa-envelope"></i>
+                                    <span class="ms-3">Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- ==================End nav================== -->
+            </div>
+        </header>
+    </div>
+    <!-- ================End Header for small screen============= -->
+
+    <!-- =====================Start Banner================== -->
+    <section id="banner" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="banner-content">
+            <h1>Hanaa Mohammed</h1>
+            <p>
+                I am a <span class="type"></span>
+            </p>
+        </div>
+    </section>
+    <!-- =====================End Banner================== -->
+    <!-- =================Start Main===================== -->
+    <div class="main d-flex flex-column " data-bs-spy="scroll" data-bs-target="#navBar" data-bs-offset="0" tabindex="0">
+        <!-- =====================Start About================= -->
+        <section class="about pt-4 ps-4" id="about">
+            <div class="container-fluid">
+                <h1 class="title">About</h1>
+                <p>Seeking to participate a reputable organization where I can utilize my knowledge in the
+                    field of web development using front-end technologies and fulfils my skills and knowledge
+                    in the field of full stack web development using MERN stack while contributing to
+                    organization's growth.</p>
+                <div class="card mb-3 border-0 reveal">
+                    <div class="row g-0">
+                        <div class="col-12 col-md-4 img-thumbnail">
+                            <img src="./img/me.jpg" class="w-100" alt="...">
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Developer</h5>
+                                <p class="card-text">I believe that people should do things in which they are good at.
+                                    That’s why I chose web development as my career because I believe I’m good at this.
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3">
+                                                <i class="fas fa-chevron-right me-2 text-info"></i>
+                                                <strong>Birthday:</strong>
+                                                <span>20 Mars 1996</span>
+                                            </li>
+                                            <li class="mb-3">
+                                                <i class="fas fa-chevron-right me-2 text-info"></i>
+                                                <strong>website:</strong>
+                                                <span>www.example.com</span>
+                                            </li>
+                                            <li class="mb-3">
+                                                <i class="fas fa-chevron-right me-2 text-info"></i>
+                                                <strong>Phone:</strong>
+                                                <span>01120478786</span>
+                                            </li>
+                                            <li class="mb-3">
+                                                <i class="fas fa-chevron-right me-2 text-info"></i>
+                                                <strong>City:</strong>
+                                                <span>Qus</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3">
+                                                <i class="fas fa-chevron-right me-2 text-info"></i>
+                                                <strong>Age:</strong>
+                                                <span>25</span>
+                                            </li>
+                                            <li class="mb-3">
+                                                <i class="fas fa-chevron-right me-2 text-info"></i>
+                                                <strong>Dgree:</strong>
+                                                <span>Junior</span>
+                                            </li>
+                                            <li class="mb-3">
+                                                <i class="fas fa-chevron-right me-2 text-info"></i>
+                                                <strong>Email:</strong>
+                                                <span>hanamohammed622@gmail.com</span>
+                                            </li>
+                                            <li class="mb-3">
+                                                <i class="fas fa-chevron-right me-2 text-info"></i>
+                                                <strong>Freelancer:</strong>
+                                                <span>Available</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p>My education background and my trainings on this allowed me to thrive in this career.
+                                    I'm good in using WordPress, WooCommerce, PHP ,HTML/CSS, bootstrap, jQuery, javascript and sass
+                                    I believe in hard work and honesty. I am always interested in making long term
+                                    professional relationships with my clients to ensure that every project becomes
+                                    successful. So, if you hire me, I can assure you that you will not regret your
+                                    decision.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =====================Start Facts=============== -->
+                <section class="facts  pt-4 ">
+                    <h1 class="title">Facts</h1>
+                    <p>Knowledgeable in c/c++, Database(SQL), Datastructure,
+                        Professional in user interface development including HTML, CSS, JS,
+                        Aware of MYSQL, PHP and CMS development using WordPress.</p>
+                    <ul class="list-unstyled">
+                        <div class="row px-5 reveal">
+                            <li class="fact col-12 col-sm-6 col-lg-3">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <i class="far fa-smile mt-4 text-info fw-bold fs-1 "></i>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold fs-1">0</h5>
+                                                <p class="card-text"><strong>Happy Clients</strong> consequuntur</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="fact col-12 col-sm-6 col-lg-3">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <i class="far fa-newspaper mt-4 text-info fw-bold fs-1 "></i>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold fs-1">10</h5>
+                                                <p class="card-text"><strong>Projects </strong> adipisci atque cum
+                                                    quia aut</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="fact col-12 col-sm-6 col-lg-3">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <i class="fas fa-headset mt-4 text-info fw-bold fs-1 "></i>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold fs-1">30</h5>
+                                                <p class="card-text"><strong>Hours Of Support</strong> aut commodi
+                                                    quaerat
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="fact col-12 col-sm-6 col-lg-3">
+                                <div class="card mb-3 border-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <i class="fas fa-user-friends mt-4 text-info fw-bold fs-1 "></i>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold fs-1">32</h5>
+                                                <p class="card-text"><strong>Hard Workers</strong> rerum asperiores
+                                                    dolor
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </section>
+                <!-- =====================End Facts=============== -->
+            </div>
+        </section>
+        <!-- =====================End About================= -->
+        <!-- =====================Start Skills================= -->
+        <section class="skills" id="skills">
+            <div class="container-fluid pt-4 ps-5">
+                <h1 class="title">Skills</h1>
+                <p>My education background and my trainings on this allowed me to thrive in this career.
+                    I'm good in using WordPress, WooCommerce, PHP ,HTML/CSS, bootstrap, jQuery, javascript and sass
+                    I believe in hard work and honesty. I am always interested in making long term
+                    professional relationships with my clients to ensure that every project becomes
+                    successful. So, if you hire me, I can assure you that you will not regret your
+                    decision.</p>
+                <ul class="row list-unstyled reveal">
+                    <li class="col-12 col-md-6 my-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="skill">HTML5</div>
+                            <span data-percent="90" id="html">0%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" data-progress="90"></div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 my-3">
+                        <div class="d-flex justify-content-between">
+                            <span class="skill">CSS3</span>
+                            <span id="c33" data-percent="90">90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" data-progress="90"></div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 my-3">
+                        <div class="d-flex justify-content-between">
+                            <span class="skill">JAVASCRIPT</span>
+                            <span id="js" data-percent="90">90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" data-progress="90"></div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 my-3">
+                        <div class="d-flex justify-content-between">
+                            <span class="skill">Bootstrap</span>
+                            <span id="bootstrap" data-percent="90">90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" data-progress="90"></div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 my-3">
+                        <div class="d-flex justify-content-between">
+                            <span class="skill">SASS</span>
+                            <span id="sass" data-percent="80">80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" data-progress="80"></div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 my-3">
+                        <div class="d-flex justify-content-between">
+                            <span class="skill">MogoDB</span>
+                            <span id="mongo" data-percent="70">70%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" data-progress="80"></div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 my-3">
+                        <div class="d-flex justify-content-between">
+                            <span class="skill">jQuery</span>
+                            <span id="jq" data-percent="70">70%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" data-progress="70"></div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 my-3">
+                        <div class="d-flex justify-content-between">
+                            <span class="skill">Node js</span>
+                            <span id="node" data-percent="50">50%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" data-progress="50"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- =====================End Skills================= -->
+        <!-- =====================Start Resume=============== -->
+        <section class="resume" id="resume">
+            <div class="container-fluid pt-4 ps-5">
+                <h1 class="title">Resume</h1>
+                <p>Seeking to participate a reputable organization where I can utilize my knowledge in the
+                    field of web development using front-end technologies and fulfils my skills and knowledge
+                    in the field of full stack web development using MERN stack while contributing to
+                    organization's growth</p>
+                <div class="row reveal">
+                    <div class="left col-12 col-md-6">
+                        <h3>Sumary</h3>
+                        <div class="resume-item">
+                            <h4>Hanaa Mohammed</h4>
+                            <p>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing
+                                and developing user-centered digital/print marketing material from initial concept
+                                to final, polished deliverable.</p>
+                            <ul>
+                                <li>Egypt- Qena- Qus</li>
+                                <li>(123) 456-7891</li>
+                                <li>hanamohammed622@gmail.com</li>
+                            </ul>
+                        </div>
+                        <h3>Education</h3>
+                        <div class="resume-item">
+                            <h4>Information Technology Institute-ITI</h4>
+                            <span class="badge bg-secondary">2021</span>
+                            <p>Rochester Institute of Technology, Rochester, NY</p>
+                            <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea
+                                vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Bachelor of Science and Education</h4>
+                            <span class="badge bg-secondary">2014 - 2018</span>
+                            <p>Rochester Institute of Technology, Rochester, NY</p>
+                            <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius
+                                vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae
+                                consequatur neque etlon sader mart dila</p>
+                        </div>
+                    </div>
+                    <div class="right col-12 col-md-6">
+                        <h3>Professional Experience</h3>
+                        <div class="resume-item">
+                            <h4>SENIOR GRAPHIC DESIGN SPECIALIST</h4>
+                            <span class="badge bg-secondary">2019 - Present</span>
+                            <p>Experion, New York, NY</p>
+                            <ul>
+                                <li>Lead in the design, development, and implementation of the graphic, layout, and
+                                    production communication materials</li>
+                                <li>Delegate tasks to the 7 members of the design team and provide counsel on all
+                                    aspects of the project.</li>
+                                <li>Supervise the assessment of all graphic materials in order to ensure quality and
+                                    accuracy of the design</li>
+                                <li>Oversee the efficient use of production project budgets ranging from $2,000 -
+                                    $25,000</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>GRAPHIC DESIGN SPECIALIST</h4>
+                            <span class="badge bg-secondary">2017 - 2018</span>
+                            <p>Stepping Stone Advertising, New York, NY</p>
+                            <ul>
+                                <li>Developed numerous marketing programs (logos, brochures,infographics,
+                                    presentations, and advertisements).</li>
+                                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                                <li>Recommended and consulted with clients on the most appropriate graphic design
+                                </li>
+                                <li>Created 4+ design presentations and proposals a month for clients and account
+                                    managers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =====================End Resume=============== -->
+        <!-- =====================Start Portfolio=============== -->
+        <section class="portfolio" id="portfolio">
+            <div class="container-fluid pt-4 ps-5">
+                <h1 class="title">Portfolio</h1>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                    Sit sint
+                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                    Quia
+                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <div class="filter">
+                    <ul class="list-unstyled d-flex flex-row justify-content-center">
+                        <li class="list p-2 m-3 lh-base opacity-75 rounded-top active" data-filter="All">All</li>
+                        <li class="list p-2 m-3 lh-base opacity-75 rounded-top" data-filter="HTML/CSS">HTML/CSS</li>
+                        <li class="list p-2 m-3 lh-base opacity-75 rounded-top" data-filter="WordPress">WordPress</li>
+                        <li class="list p-2 m-3 lh-base opacity-75 rounded-top" data-filter="Javascript">Javascript</li>
+                        <li class="list p-2 m-3 lh-base opacity-75 rounded-top" data-filter="bootstrap">Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project d-flex flex-wrap w-100 justify-content-center mb-4 reveal">
+                <!-- ========== -->
+                <div class="item HTML/CSS">
+                    <div class="inner">
+                        <img src="./img/html1.jpg" alt=""
+                            class="img-thumbnail position-absolute top-0 start-0 w-100 h-100">
+                        <div class="gallery-overlay">
+                            <a href="https://ztztlchmfmpmllg9qbzscq-on.drv.tw/free%20host/earth_mars_animation/" class="venbox vbox-item" data-gall="gallery">
+                                <i class="fas fa-images"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item HTML/CSS">
+                    <div class="inner">
+                        <img src="./img/html2.jpg" alt=""
+                            class="img-thumbnail position-absolute top-0 start-0 w-100 h-100">
+                        <div class="gallery-overlay">
+                            <a href="https://ztztlchmfmpmllg9qbzscq-on.drv.tw/free host/template_1/" class="venbox vbox-item" data-gall="gallery">
+                                <i class="fas fa-images"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========== -->
+                <div class="item WordPress">
+                    <div class="inner">
+                        <img src="./img/wordpress1.jpg" alt=""
+                            class="img-thumbnail position-absolute top-0 start-0 w-100 h-100">
+                        <div class="gallery-overlay">
+                            <a href="./img/wordpress1.jpg" class="venbox vbox-item" data-gall="gallery">
+                                <i class="fas fa-images"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========== -->
+                <div class="item WordPress">
+                    <div class="inner">
+                        <img src="./img/wordpress2.jpg" alt=""
+                            class="img-thumbnail position-absolute top-0 start-0 w-100 h-100">
+                        <div class="gallery-overlay">
+                            <a href="./img/wordpress2.jpg" class="venbox vbox-item" data-gall="gallery">
+                                <i class="fas fa-images"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========== -->
+                <div class="item Javascript">
+                    <div class="inner">
+                        <img src="./img/js2.jpg" alt=""
+                            class="img-thumbnail position-absolute top-0 start-0 w-100 h-100">
+                        <div class="gallery-overlay">
+                            <a href="https://ztztlchmfmpmllg9qbzscq-on.drv.tw/free%20host/Live%20User%20filter/" class="venbox vbox-item" data-gall="gallery">
+                                <i class="fas fa-images"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========== -->
+                <div class="item bootstrap">
+                    <div class="inner">
+                        <img src="./img/bootstrap1.jpg" alt=""
+                            class="img-thumbnail position-absolute top-0 start-0 w-100 h-100">
+                        <div class="gallery-overlay">
+                            <a href="https://ztztlchmfmpmllg9qbzscq-on.drv.tw/free host/bootstrap/" class="venbox vbox-item" data-gall="gallery">
+                                <i class="fas fa-images"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========== -->
+                <div class="item HTML/CSS">
+                    <div class="inner">
+                        <img src="./img/html4.jpg" alt=""
+                            class="img-thumbnail position-absolute top-0 start-0 w-100 h-100">
+                        <div class="gallery-overlay">
+                            <a href="https://worldinphysics.000webhostapp.com/" class="venbox vbox-item" data-gall="gallery">
+                                <i class="fas fa-images"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item Javascript">
+                    <div class="inner">
+                        <img src="./img/js3.jpg" alt=""
+                            class="img-thumbnail position-absolute top-0 start-0 w-100 h-100">
+                        <div class="gallery-overlay">
+                            <a href="https://ztztlchmfmpmllg9qbzscq-on.drv.tw/free host/JavaScript BookList App/" class="venbox vbox-item" data-gall="gallery">
+                                <i class="fas fa-images"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item Javascript">
+                    <div class="inner">
+                        <img src="./img/js4.jpg" alt=""
+                            class="img-thumbnail position-absolute top-0 start-0 w-100 h-100">
+                        <div class="gallery-overlay">
+                            <a href="https://ztztlchmfmpmllg9qbzscq-on.drv.tw/free host/Blurry Loading/" class="venbox vbox-item" data-gall="gallery">
+                                <i class="fas fa-images"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =====================End Portfolio=============== -->
+        <!-- =====================Start Contact============== -->
+        <section class="contact p-5" id="contact">
+            <h1 class="title">Contact</h1>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
+                ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <div class="row justify-content-evenly mt-5 reveal">
+                <div class="col-12 col-md-5 shadow p-4 mt-4" data-wow-delay="2s">
+                    <div class="info">
+                        <div class="address d-flex flex-row flex-wrap align-item-center">
+                            <i class="icon fas fa-map-marker-alt me-5 px-2 py-3 fs-4"></i>
+                            <div>
+                                <h4>Location:</h4>
+                                <p>A108 Adam Street, New York, NY 535022</p>
+                            </div>
+                        </div>
+                        <div class="email d-flex flex-row flex-wrap align-item-center">
+                            <i class="icon far fa-envelope me-5 px-2 py-3 fs-4"></i>
+                            <div>
+                                <h4>Email:</h4>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="call d-flex flex-row flex-wrap align-item-center">
+                            <i class="icon fas fa-mobile-alt me-5 px-2 py-3 fs-4"></i>
+                            <div>
+                                <h4>Call:</h4>
+                                <p>+1 5589 55488 55s</p>
+                            </div>
+                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7291201.86407175!2d26.38231469489036!3d26.834953204765565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2sEgypt!5e0!3m2!1sen!2seg!4v1632639759093!5m2!1sen!2seg"
+                            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 shadow p-4 mt-4" data-wow-delay="2s">
+                    <form>
+                        <div class="row mb-3">
+                            <div class="mb-3 col-6">
+                                <label for="name" class="form-label mb-3 ">Your Name</label>
+                                <input type="text" class="form-control h-75" id="name" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label for="exampleInputEmail1" class="form-label mb-3">Your Email</label>
+                                <input type="email" class="form-control h-75" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label mb-3">Subject</label>
+                            <input type="text" class="form-control h-75" id="subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="floatingTextarea2" class="form-label mb-3">Message</label>
+                            <textarea class="form-control h-auto" placeholder="Leave a comment here"
+                                id="floatingTextarea2" rows="10"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- =====================End Contact============== -->
+    </div>
+    <!-- =================End Main===================== -->
+    <!-- ==================scroll top================== -->
+    <i class="fas fa-arrow-circle-up position-fixed p-5  text-info"></i>
+
+
+
+    <script src="./js/typed.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
